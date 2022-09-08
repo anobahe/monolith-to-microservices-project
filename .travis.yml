@@ -20,5 +20,5 @@ after_success:
       - echo hi0275050287 | docker login -u $DOCKER_USERNAME --password-stdin
       - docker push anobahe/udagram-api-feed:v1
       - docker push anobahe/udagram-api-user:v1
-      - docker push anobahe/udagram-api-frontend:v1
+      - docker push anobahe/udagram-frontend:v1
       - docker push anobahe/reverseproxy:v1
