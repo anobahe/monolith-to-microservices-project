@@ -15,6 +15,7 @@ spec:
       containers:
       - name: reverseproxy
         image: anobahe/reverseproxy
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
         resources:

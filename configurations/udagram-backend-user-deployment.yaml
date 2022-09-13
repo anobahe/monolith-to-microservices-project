@@ -15,6 +15,7 @@ spec:
       containers:
       - name: backend-api-user
         image: anobahe/udagram-api-user
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
         resources:

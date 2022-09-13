@@ -15,6 +15,7 @@ spec:
       containers:
       - name: udagram-backend-feed
         image: anobahe/udagram-api-feed
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
         resources:
