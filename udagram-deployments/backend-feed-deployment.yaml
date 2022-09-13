@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend-feed
-        image: anobahe/udagram-api-feed
+        image:  docker.io/anobahe/udagram-api-feed
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80

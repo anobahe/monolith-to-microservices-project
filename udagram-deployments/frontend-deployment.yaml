@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: anobahe/udagram-frontend
+        image:  docker.io/anobahe/udagram-frontend
         imagePullPolicy: IfNotPresent
         ports: 
         - containerPort: 80

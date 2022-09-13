@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: reverseproxy
-        image: anobahe/reverseproxy
+        image:  docker.io/anobahe/reverseproxy
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
