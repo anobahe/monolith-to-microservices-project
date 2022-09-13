@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend-api-user
+  name: backend-feed
 spec:
   selector:
     matchLabels:
-      run: backend-api-user
+      run: backend-feed
   replicas: 2
   template:
     metadata:
       labels:
-        run: backend-api-user
+        run: backend-feed
     spec:
       containers:
-      - name: backend-api-user
-        image: anobahe/udagram-api-user
+      - name: backend-feed
+        image: anobahe/udagram-api-feed
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
